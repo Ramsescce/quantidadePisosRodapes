@@ -19,14 +19,14 @@ $this->base=$base;
         $this->altura =$altura;
     }
     function retornaBase(){
-return $this->base;
+        return $this->base;
     }
     function retornaAltura(){
         return $this->altura;
     }
     function retornaLados(){
-$lados = array($this->base, $this->altura);
-return $lados;
+    $lados = array($this->base, $this->altura);
+        return $lados;
     }
     function calculaArea(){
         return $this->base*$this->altura;
@@ -42,5 +42,5 @@ $altura=rtrim(fgets(STDIN));
 
 $retangulo = new Retangulo();
 $retangulo->alteraLados($base,$altura);
-echo "Quantidade de Pisos:".$retangulo->calculaArea()."<BR>";
+echo "Quantidade de Pisos:".$retangulo->calculaArea()."\n";
 echo "Quantidade de rodapes :".$retangulo->calculaPerimetro();
